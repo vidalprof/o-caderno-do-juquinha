@@ -1,0 +1,177 @@
+{
+ "ano": 2,
+ "componente": "Língua Portuguesa",
+ "rede": "Currículo da Educação Básica do Sistema Municipal de Ensino de Blumenau",
+ "documento": "_curriculo/blumenau.txt",
+ "conceitos": [
+  "divisão silábica",
+  "palavra",
+  "frase"
+ ],
+ "fora_do_curriculo": [],
+ "degrau": 2,
+ "objetivos": [
+  {
+   "objetivo": "Achar onde uma palavra acaba e a outra começa, numa frase grudada",
+   "folhas": [
+    1,
+    2,
+    3
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Separar palavras grudadas e ainda dizer a qual grupo cada uma pertence",
+   "folhas": [
+    4,
+    5
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Reconhecer, entre duas escritas, a que tem os espaços no lugar",
+   "folhas": [
+    6
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Pôr palavras soltas na ordem, formando uma frase que faz sentido",
+   "folhas": [
+    7,
+    8,
+    19,
+    28
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Escrever a palavra que a figura nomeia, inteira e no lugar dela",
+   "folhas": [
+    9,
+    10,
+    31,
+    32
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Ligar a frase à figura de que ela fala",
+   "folhas": [
+    11
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Ver que uma palavra só não se parte no meio (a gora, com migo)",
+   "folhas": [
+    12,
+    13,
+    14
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Dizer qual dos dois erros está na frente: grudou demais ou partiu demais",
+   "folhas": [
+    15,
+    33
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Segmentar um TEXTO inteiro: parlenda e cantiga, verso a verso",
+   "folhas": [
+    16,
+    18,
+    20
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Contar as palavras de um verso, contando também o O e o A",
+   "folhas": [
+    17,
+    21,
+    30
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Descobrir que dentro de uma palavra mora outra palavra",
+   "folhas": [
+    22,
+    23,
+    24
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Escrever sem grudar as palavrinhas que mais grudam",
+   "folhas": [
+    25,
+    29
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Segmentar um bilhete inteiro, do começo ao fim",
+   "folhas": [
+    26,
+    27,
+    34,
+    35
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  }
+ ],
+ "evidencia": [
+  "Jogado do começo ao fim no navegador, item por item, antes de publicar.",
+  "Um jogador automático resolve cada item pela resposta declarada e confere se a folha fecha.",
+  "Leiaute medido em 6 tamanhos de tela, nas 35 folhas.",
+  "Toda tela é narrada com voz real, e cada opção de resposta tem o seu alto-falante.",
+  "As 35 folhas nasceram do crivo de 40 folhas de papel reais, em `_sequencias/POTE-SEG2.md`, lidas uma a uma, com o comando impresso copiado verbatim.",
+  "As 12 figuras foram recortadas das próprias folhas colhidas (d02 e d19); nenhuma é gerada por IA.",
+  "A habilidade citada no dossiê é conferida, palavra por palavra, contra o currículo da rede."
+ ],
+ "observacoes": [
+  "⚠️ A LINHA DO CURRÍCULO TEM DUAS METADES E O `_sil2` JÁ LEVOU UMA. O mesmo objeto de conhecimento (\"Segmentação de palavras/classificação de palavras por número de sílabas\") cobre a classificação silábica — monossílaba a polissílaba — e a segmentação ao escrever. *O Armário das Quatro Gavetas* (`_sil2`) é a primeira metade; este caderno é a segunda. As duas não se pisam, e foi por isso que as OITO folhas de separação silábica da colheita (d21, d25, d27, d28, d32, d37, d40 e d23) ficaram de fora deste caderno, apesar de boas.",
+  "⚠️ E ESTE CADERNO NÃO PODE SER O DO 1º ANO. \"A Tecla do Espaço Quebrou\" (`_fra1`, no ar) já corta a frase grudada, conta palavras e ordena. Quinze das quarenta folhas colhidas pedem exatamente aquilo, e uma delas (d09) é a premissa daquele caderno ao pé da letra. O degrau está na palavra \"ESCREVER\" da habilidade: aqui a criança escreve (folhas 9, 10, 14, 25, 29, 31, 32), segmenta TEXTO e não frase solta (16 a 21) e enfrenta o erro que o 1º ano não tem — a HIPERSEGMENTAÇÃO, a palavra partida ao meio (12 a 15).",
+  "⚠️ BLOCO DECLARADO, FORA DA COLHEITA: a hipersegmentação (\"a gora\", \"com migo\", \"em bora\"). Nenhuma das quarenta folhas trata dela — todas cuidam só do erro de GRUDAR. Mas a habilidade diz \"segmentar CORRETAMENTE ao escrever\", e partir uma palavra que é uma só é metade do que a criança de 2º ano faz no caderno dela. Sem este bloco, o \"corretamente\" ficaria pela metade. Está declarado aqui e no `POTE-SEG2.md`.",
+  "⚠️ TRÊS PALAVRAS QUASE ENTRARAM ERRADAS nesse bloco: \"de repente\" e \"hoje em dia\" escrevem-se MESMO separadas (o erro da criança ali é o contrário, \"derrepente\"), e \"com tente\" não soletra \"contente\". As dez que ficaram são todas palavra única de verdade."
+ ],
+ "conceitos_conferencia": [
+  "⚠️ O PORTÃO 0b9 NÃO MEDE `conceitos` EM PORTUGUÊS, e isto aqui é a conferência feita à mão no lugar dele. O PDF do currículo de Blumenau só traz cabeçalho POR ANO em Ciências, Geografia e História; Português e Matemática vêm em faixas, e procurar o termo no documento inteiro aprovaria conteúdo de outro ano — que é justamente o defeito que o portão existe para pegar.",
+  "Conferido à mão em 19/set/2026, nas linhas 3182-3186 do `_curriculo/blumenau.txt` (bloco 2º ANO · TODOS OS CAMPOS DE ATUAÇÃO · Análise linguística/semiótica):",
+  "  · habilidade, verbatim: \"Segmentar corretamente as palavras ao escrever frases e textos.\"",
+  "  · objeto de conhecimento, verbatim: \"Segmentação de palavras/classificação de palavras por número de sílabas\"",
+  "  · conceitos/conteúdos declarados na mesma linha, verbatim: \"divisão silábica e classificação (monossílaba, dissílaba, trissílaba e polissílaba), palavra, frase\"",
+  "Os três conceitos declarados acima (divisão silábica, palavra, frase) são os que este caderno ENSINA de fato — e a divisão silábica aparece só como apoio (dizer a palavra devagar para achar onde ela acaba), nunca como classificação, que é do `_sil2`."
+ ]
+}

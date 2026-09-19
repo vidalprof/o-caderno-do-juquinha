@@ -1,0 +1,3 @@
+{
+ "tatu": "NÃO é corte: é a MOLDURA AZUL da própria folha d02, que desce coladinha no focinho do tatu. Medido coluna a coluna em 19/set/2026: as colunas 40 a 52 estão 100% pintadas (134 de 134 pixels de altura) — isso é a moldura, não um bicho; a coluna 53 está VAZIA; e o tatu começa na 54. A caixa abre na 60, com folga, e o `limpa_fundo` apaga o que sobra da moldura pela borda. Conferido OLHANDO a figura recortada: focinho, cauda e as quatro patas estão inteiros. O portão acusa porque a moldura toca a margem de 10 px que ele examina — e ele tem razão em perguntar; a resposta é esta."
+}
