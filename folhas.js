@@ -919,7 +919,7 @@ var OBJETIVOS = [
    ok: "marca e conta cada palavra do verso, inclusive as de uma letra"},
   {n: "Descobrir que dentro de uma palavra mora outra palavra", f: [22, 23, 24],
    ok: "acha a palavra escondida dentro da palavra maior"},
-  {n: "Escrever sem grudar as palavrinhas que mais grudam", f: [25, 29],
+  {n: "Escolher e escrever sem grudar as palavrinhas que mais grudam", f: [25, 29],
    ok: "escreve agora, comigo, devagar e escolhe a palavra que falta"},
   {n: "Segmentar um bilhete inteiro, do começo ao fim", f: [26, 27, 34, 35],
    ok: "corta as frases do bilhete e do mural sem ajuda"}
