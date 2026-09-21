@@ -38,8 +38,8 @@ function aoAbrir(d, fn){ if(!d._aoAbrir) d._aoAbrir = []; d._aoAbrir.push(fn); }
    Regra da casa: tudo o que a criança PRECISA LER tem que poder ser OUVIDO.
    O desenho do botão é CSS puro: nada de emoji (vira quadradinho nos PCs da
    escola). */
-function botaoSom(rot, aoTocar){
-  var b = el("button", "som");
+function botaoSom(rot, aoTocar, cls){
+  var b = el("button", cls || "som");
   b.innerHTML = '<i class="cone"></i><i class="onda o1"></i><i class="onda o2"></i>';
   b.setAttribute("aria-label", rot || "Ouvir");
   b.onclick = function(ev){ ev.stopPropagation(); sPasso(); aoTocar(); };
@@ -94,7 +94,25 @@ function opcoes(pai, pi, id, lista, certa, cls, falaCerto, falaDica, aoAcertar, 
     b.setAttribute("aria-label", o.aria || o.v);
     b.onclick = function(){ if(b._arrastou){ b._arrastou = false; return; } responde(o, b); };
     if(soltarEm) puxavel(b, soltarEm, function(){ responde(o, b); });
-    box.appendChild(b);
+    /* ⚠️ O ALTO-FALANTE DA RESPOSTA, e ele é DISCRETO e vem ANTES da escolha.
+       Pergunta do Marcos (20/set/2026): *"a atividade tem áudio para ajudar os
+       que não sabem ler? O alto-falante discreto para clicar caso o estudante
+       queira ouvir"*. A resposta era NÃO: a opção tinha `fala`, mas o motor só
+       a tocava DEPOIS do clique — ou seja, a criança tinha de ESCOLHER para
+       ouvir, e aí já tinha respondido. O portão `1o` media a metade errada
+       (cobrava o campo `fala` existir, não a criança poder ouvir antes).
+       ⚠️ Botão IRMÃO, nunca dentro do outro: botão dentro de botão é HTML
+       inválido e o clique vaza para a resposta. O `botaoSom` já faz
+       `stopPropagation`. */
+    if(o.fala){
+      var w = el("div", "opw" + (cls && cls.indexOf("frase") > -1 ? " larga" : ""));
+      w.appendChild(b);
+      w.appendChild(botaoSom("Ouvir esta resposta",
+        (function(f){ return function(){ falar(f); }; })(o.fala), "som somop"));
+      box.appendChild(w);
+    } else {
+      box.appendChild(b);
+    }
   });
   pai.appendChild(box);
 }
@@ -203,7 +221,7 @@ function f0(d){
      abrem devagar até os espaços aparecerem, e fecham de novo. A criança vê o
      problema antes de ler o título — o problema primeiro, o conceito por
      último (Portão 0 da filosofia da casa). */
-  var c = el("div", "capa"), nome = "O Caderno do Juquinha", k, letras = "";
+  var c = el("div", "capa"), nome = "Aprendendo a separar as palavras na frase e no texto", k, letras = "";
   nome.split(" ").forEach(function(pal, w){
     var s = "";
     for(k = 0; k < pal.length; k++) s += '<span class="lt">' + pal.charAt(k) + '</span>';
@@ -1590,7 +1608,7 @@ function figurasDaFrase(figs){
   return tira;
 }
 function ouvirFrase(chave, rot){
-  var b = el("button", "bt azul ouvirped", rot || "Escutar a frase");
+  var b = el("button", "bt ouvirped", rot || "Escutar a frase");
   b.onclick = function(){ sPasso(); falar("frz_" + chave); };
   return b;
 }
@@ -1796,8 +1814,14 @@ function f11(d, pi){
             fe: "figl_" + k, fd: "ligd_" + k,
             fc: "certo" + pi + "_" + k, dica: "dica" + pi + "_" + k};
   });
-  var cx = el("div", "ligcx"); d.appendChild(cx);
-  montaLigar(cx, pi, "g0", pares, d);
+  /* ⚠️ SEM EMBRULHO: o `montaLigar` recebe a PÁGINA direto. Antes havia um
+     um <div> de embrulho com classe própria no meio, que nunca teve uma linha
+     de CSS — um <div>
+     de nada. O `_qa/classes.py`, depois que passou a ler o `folhas.js`
+     (20/set/2026), acusou `.ligcx` em cinco cadernos; a resposta certa não era
+     inventar uma regra para ele, era tirar o embrulho. O `_corpo5`, que nasceu
+     do esqueleto novo, já fazia assim. */
+  montaLigar(d, pi, "g0", pares, d);
 }
 
 /* ---------- 12, 13 — A PALAVRA PARTIDA AO MEIO ⭐ O BLOCO NOVO ----------

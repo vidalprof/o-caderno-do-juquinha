@@ -2,7 +2,7 @@
 <html lang="pt-BR"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>O Caderno do Juquinha — 2º ano</title>
+<title>Aprendendo a separar as palavras na frase e no texto — 2º ano</title>
 <meta name="description" content="DESCREVER: o assunto, o ano, quantas folhas e de onde vieram as folhas de papel colhidas.">
 <!-- ============================================================
      ESQUELETO DA FOLHA VIVA — a casca, sem conteúdo nenhum.
@@ -129,6 +129,27 @@ button{font-family:inherit;cursor:pointer}
 
 /* fileira genérica de opções */
 .ops{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px}
+/* ⚠️ O ALTO-FALANTE DA RESPOSTA — DISCRETO, e é regra do Marcos (20/set/2026):
+   *"o alto-falante discreto para clicar caso o estudante queira ouvir"*. Ele
+   vem AO LADO de cada opção, antes da escolha, para quem ainda não lê.
+   ⚠️ 42 px e não menos: o portão de leiaute reprova alvo abaixo de 40 px, e
+   dedo de criança não acerta menor que isso. "Discreto" aqui é a BORDA clara e
+   a opacidade, não o tamanho. */
+/* ⚠️ `wrap` e `max-width` NÃO são enfeite: sem eles a opção + o alto-falante
+   passavam 20 px da tela do celular no `_reinos` (folha 25), e o portão de
+   leiaute pegou — alvo cortado na beira é alvo que a criança não alcança.
+   Com `wrap`, quando não cabe lado a lado o alto-falante desce para baixo
+   da resposta em vez de empurrá-la para fora. */
+.opw{display:flex;flex-wrap:wrap;align-items:center;gap:6px;max-width:100%}
+.opw.larga{width:100%;max-width:440px}
+.opw.larga .op.frase{flex:1;width:auto;max-width:none}
+.som.somop{width:42px;height:42px;min-width:42px;border-width:2px;
+  border-color:#e3d6ce;opacity:.85}
+.som.somop:active{opacity:1}
+.som.somop .cone{left:11px;top:15px}
+.som.somop .o1{left:24px;top:14px}
+.som.somop .o2{left:27px;top:9px}
+
 .op{min-width:64px;min-height:56px;border:3px solid #e6dbd1;border-radius:16px;background:#fff;color:var(--texto);
   font-weight:900;font-size:20px;padding:8px 14px;-webkit-transition:transform .1s;transition:transform .1s}
 .op:active{transform:scale(.94)}
@@ -911,7 +932,7 @@ img{-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;user-drag:n
 <div id="topo">
   <button class="zap ouvir" id="bOuvir" aria-label="Ouvir de novo"><svg viewBox="0 0 24 24"><path d="M12 3a5 5 0 0 0-5 5v1H5v6h2v1a5 5 0 0 0 10 0v-1h2V9h-2V8a5 5 0 0 0-5-5z"/></svg></button>
   <button class="zap" id="bVoz" aria-label="Ligar ou desligar a narração"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button>
-  <div class="tit">O Caderno do Juquinha</div>
+  <div class="tit">Aprendendo a separar as palavras na frase e no texto</div>
   <div class="prog"><i id="progI"></i></div>
   <div class="pg" id="pg">Capa</div>
 </div>
@@ -1074,7 +1095,7 @@ var ITENS = {
 /*FALAS-INI*/
 var FALAS = {
  "cacatoque": "Toque na primeira letra da palavra e depois na última.",
- "capa": "O Caderno do Juquinha. Trinta e cinco folhas para consertar as frases que ficaram grudadas. Escreva o seu nome ali embaixo e toque em Começar.",
+ "capa": "Aprendendo a separar as palavras na frase e no texto. Trinta e cinco folhas para consertar as frases que ficaram grudadas. Escreva o seu nome ali embaixo e toque em Começar.",
  "certo10_s5": "Isso mesmo! O elefante é muito grande.",
  "certo10_s6": "Muito bem! O cachorrinho abanou o rabo.",
  "certo10_s7": "Você acertou! A tartaruga anda devagar.",
@@ -2560,5 +2581,5 @@ function novaFolha(){
   </div>
 </div>
 <!--</dossie-html>-->
-<script src="folhas.js?v=afacc4daec"></script>
+<script src="folhas.js?v=bf0c7163eb"></script>
 </body></html>
